@@ -1,0 +1,30 @@
+{
+    "name": "agents",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "ts-node src/index.ts provider",
+        "dev:provider": "ts-node src/index.ts provider",
+        "dev:consumer": "ts-node src/index.ts consumer",
+        "build": "tsc",
+        "start": "node dist/index.js provider",
+        "start:provider": "node dist/index.js provider",
+        "start:consumer": "node dist/index.js consumer"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@11.0.9",
+    "devDependencies": {
+        "@types/node": "^25.6.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^6.0.3"
+    },
+    "dependencies": {
+        "@somnia-chain/reactivity": "^0.2.0",
+        "dotenv": "^17.4.2",
+        "ethers": "^6.15.0",
+        "somnia-agent-kit": "^3.0.11"
+    }
+}
